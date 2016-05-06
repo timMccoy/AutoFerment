@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AutoFerment Console</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- THIRD PARTY IMPORTS -->
+		<link type="text/css" rel="stylesheet" href="bootstrapCss"/>
+		<link type="text/css" rel="stylesheet" href="bootstrap-switchCss"/>
+		<link type="text/css" rel="stylesheet" href="jquery-uiCss"/>
+		<link type="text/css" rel="stylesheet" href="jqwidgetsCss"/>
+		<link type="text/css" rel="stylesheet" href="bootstrap-clockPickerCss"/>
+		<link type="text/css" rel="stylesheet" href="styleCss"/>
+		<link type="text/css" rel="stylesheet" href="digitalNumbersCss"/>
+		<script type='text/javascript' src="jqueryJs"></script>		
+		<script type='text/javascript' src="jquery-uiJs"></script>
+		<script type='text/javascript' src="bootstrapJs"></script>
+		<script type='text/javascript' src="bootstrap-switchJs"></script>
+		<script type='text/javascript' src="bootstrap-clockPickerJs"></script>
+		<script type='text/javascript' src="ChartJs"></script>
+		<script type="text/javascript" src="jqxcoreJs"></script>
+		<script type="text/javascript" src="jqxdrawJs"></script>
+		<script type="text/javascript" src="jqxgaugeJs"></script>
+		<script type="text/javascript" src="digitalNumbersJs"></script>
+		<link type="text/css" rel="stylesheet" href="bootstrap-sliderCss"/>
+		<script type='text/javascript' src="bootstrap-sliderJs"></script>
+		<!-- SOURCE CODE IMPORTS -->
+		<script type='text/javascript' src="navBarControlJs"></script>
+		<script type='text/javascript' src="controlPanelJs"></script>
+		<script type='text/javascript' src="monitorPanelJs"></script>
+
+	</head>
+	<body>
+		<nav class="navbar navbar-default" id="mainNavbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">AutoFerment</a>
+				</div>
+				<ul class="nav navbar-nav  navbar-right">
+					<li id="controlPanel_navBtn" class="active"><a href="#controlPanel">Control</a></li> 
+					<li id="monitorPanel_navBtn"><a href="#monitorPanel">Monitor</a></li> 
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class="tab-content">
+				<div id="controlPanel" class="tab-pane active"></div>
+				<div id="monitorPanel" class="tab-pane"></div>
+			</div>
+		</div>
+	</body>
+
+	<script>	
+		initMainNavBar();
+		
+		initControlPanel();
+		initMonitorPanel();
+		//$("#monitorPanel").show();
+		$("#controlPanel").show();
+
+		$('.tab-content').css({ "top" : $("#mainNavbar").height() + 10 + 'px'});
+		$( window ).resize(function() 
+		{
+			$('.tab-content').css({ "top" : $("#mainNavbar").height() + 10 + 'px'});
+		});		
+	</script>
+</html>
