@@ -25,9 +25,11 @@
 		<link type="text/css" rel="stylesheet" href="bootstrap-sliderCss"/>
 		<script type='text/javascript' src="bootstrap-sliderJs"></script>
 		<!-- SOURCE CODE IMPORTS -->
+		
 		<script type='text/javascript' src="navBarControlJs"></script>
 		<script type='text/javascript' src="controlPanelJs"></script>
 		<script type='text/javascript' src="monitorPanelJs"></script>
+		<script type='text/javascript' src="schedulerPanelJs"></script>
 
 	</head>
 	<body>
@@ -38,7 +40,8 @@
 				</div>
 				<ul class="nav navbar-nav  navbar-right">
 					<li id="controlPanel_navBtn" class="active"><a href="#controlPanel">Control</a></li> 
-					<li id="monitorPanel_navBtn"><a href="#monitorPanel">Monitor</a></li> 
+					<li id="monitorPanel_navBtn"><a href="#monitorPanel">Monitor</a></li>
+					<li id="schedulerPanel_navBtn"><a href="#schedulerPanel">Scheduler</a></li>					
 				</ul>
 			</div>
 		</nav>
@@ -46,6 +49,7 @@
 			<div class="tab-content">
 				<div id="controlPanel" class="tab-pane active"></div>
 				<div id="monitorPanel" class="tab-pane"></div>
+				<div id="schedulerPanel" class="tab-pane"></div>
 			</div>
 		</div>
 	</body>
@@ -55,6 +59,7 @@
 		
 		initControlPanel();
 		initMonitorPanel();
+		initSchedulerPanel();
 		//$("#monitorPanel").show();
 		$("#controlPanel").show();
 

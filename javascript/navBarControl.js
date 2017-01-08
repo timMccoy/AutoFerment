@@ -10,6 +10,7 @@ function initMainNavBar()
 		if(!$("#controlPanel").is(":visible"))
 		{
 			$("#monitorPanel").hide();
+			$("#schedulerPanel").hide();
 			$("#controlPanel").show();
 		}
 	});
@@ -17,7 +18,16 @@ function initMainNavBar()
 		if(!$("#monitorPanel").is(":visible"))
 		{
 			$("#controlPanel").hide();
+			$("#schedulerPanel").hide();
 			$("#monitorPanel").show();
+		}
+	});
+	$("#schedulerPanel_navBtn").click(function(){
+		if(!$("#schedulerPanel").is(":visible"))
+		{
+			$("#controlPanel").hide();			
+			$("#monitorPanel").hide();
+			$("#schedulerPanel").show();
 		}
 	});
 }

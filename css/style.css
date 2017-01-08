@@ -210,6 +210,59 @@ input[type='number'] {
     border: none;
 }
 
+
+.accordion .ui-accordion-content {
+  background-color: #333333;
+  color: #99ccff;
+}
+
+.accordion .ui-accordion-header {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+.accordion .ui-accordion-header.ui-state-active {
+	background-color: #773b00; 
+	color: #99ccff;
+	border: none;
+}
+
+.accordion .ui-accordion-header:hover { 
+	background: #333333;
+	color: #773b00;
+}
+
+.accordion .ui-accordion-header:focus { 
+	background: #773b00;
+	color: #99ccff;
+}
+
+
+.accordionSub .ui-accordion-content {
+  background-color: #666666;
+  color: #000000;
+}
+
+.accordionSub .ui-accordion-header {
+  background-color: #666666;
+  color: #FFFFFF;
+}
+
+.accordionSub .ui-accordion-header.ui-state-active {
+	background-color: #773b00; 
+	color: #99ccff;
+}
+
+.accordionSub .ui-accordion-header:hover { 
+	background: #666666;
+	color: #99ccff;
+}
+
+.accordionSub .ui-accordion-header:focus { 
+	background: #773b00;
+	color: #99ccff;
+}
+
 /**/
 
 /*
