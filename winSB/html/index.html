@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>AutoFerment Console</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- THIRD PARTY IMPORTS -->
+		<script type='text/javascript' src="jqueryJs"></script>
+		<link type="text/css" rel="stylesheet" href="bootstrapCss"/>
+		<script type='text/javascript' src="bootstrapJs"></script>
+		<script type="text/javascript" src="jqxcoreJs"></script>
+		<script type="text/javascript" src="jqxdrawJs"></script>
+		<script type="text/javascript" src="jqxgaugeJs"></script>
+		
+		<!-- SOURCE CODE IMPORTS -->		
+		<script type='text/javascript' src="testGUI"></script>
+		
+		<script type='text/javascript' src="navBarControlJs"></script>
+		<script type='text/javascript' src="controlPanelJs"></script>
+		<script type='text/javascript' src="monitorPanelJs"></script>
+		
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-default" id="mainNavbar">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">AutoFerment</a>
+				</div>
+				<ul class="nav navbar-nav  navbar-right">
+					<li id="controlPanel_navBtn" class="active"><a href="#controlPanel">Control</a></li> 
+					<li id="monitorPanel_navBtn"><a href="#monitorPanel">Monitor</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class="tab-content">
+				<div id="controlPanel" class="tab-pane active"></div>
+				<div id="monitorPanel" class="tab-pane"></div>
+			</div>
+		</div>
+	</body>
+	
+	
+
+	<script>	
+		//initGUI();
+		initMainNavBar();		
+		initControlPanel();
+		initMonitorPanel();
+		
+		
+		$("#controlPanel").show();
+
+		$('.tab-content').css({ "top" : $("#mainNavbar").height() + 10 + 'px'});
+		$( window ).resize(function() 
+		{
+			$('.tab-content').css({ "top" : $("#mainNavbar").height() + 10 + 'px'});
+		});	
+		
+		
+	</script>
+</html>
+

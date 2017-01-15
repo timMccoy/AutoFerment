@@ -1,0 +1,30 @@
+predefined stages:
+
+Primary Pitch				65
+Primary Post-Pitch			68
+Primary High-Krausen		71
+Primary Descent				65
+Primary Dry-Hop				61
+
+Primary Gradual Descent 1			68
+Primary Gradual Descent 2			65
+Primary Gradual Descent 3			61
+
+Secondary					general
+Secondary					61
+
+Bright						58
+
+Crash						50
+
+Serve 						general
+Serve Cold					42
+Serve Cool					49
+Serve Cellar Temp			54
+Serve Warm					59
+
+Custom 1
+Custom 2
+Custom 3
+Custom 4
+Custom 5
